@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style -->
+  <link rel="stylesheet" href="./Css/TowersOfHanoi.css">
+  <!-- script -->
+  <script src="./Js/TowersOfHanoi.js" defer></script>
+  <!-- icon -->
+  <link rel="icon" href="https://img.icons8.com/doodle/48/000000/controller--v1.png">
+  <title>Towers Of Hanoi</title>
+</head>
+
+<body>
+  <h1>
+    Torre de Hanoi <br>
+    😎Steven(MC18055) ↔️ Denis(MP20002)😎
+  </h1>
+  <section id="container">
+    <section class="controlador-Hanoi">
+      <div class="stick" ondragover="dragDiscOver(event)" ondrop="soltarDisco(event)">
+        <div class="disk" id="disk1" ondragstart="iniciarArrastre(event)">
+        </div>
+
+        <div class="disk" id="disk2" ondragstart="iniciarArrastre(event)">
+          <div class="disk-filling disk-fillingL"></div>
+        </div>
+
+        <div class="disk" id="disk3" ondragstart="iniciarArrastre(event)">
+          <div class="disk-filling disk-fillingL"></div>
+        </div>
+
+        <div class="disk" id="disk4" ondragstart="iniciarArrastre(event)">
+          <div class="disk-filling disk-fillingL"></div>
+        </div>
+
+        <div class="disk" id="disk5" ondragstart="iniciarArrastre(event)">
+          <div class="disk-filling disk-fillingL"></div>
+        </div>
+      </div>
+      <!-- base-Hanoi -->
+      <div class="base-Hanoi">
+        <div class="center-base"></div>
+      </div>
+    </section>
+
+    <section class="controlador-Hanoi">
+      <div class="stick" ondragover="dragDiscOver(event)" ondrop="soltarDisco(event)"></div>
+      <div class="base-Hanoi">
+        <div class="center-base"></div>
+      </div>
+    </section>
+
+    <section class="controlador-Hanoi">
+      <div class="stick" ondragover="dragDiscOver(event)" ondrop="soltarDisco(event)"></div>
+      <div class="base-Hanoi">
+        <div class="center-base"></div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>
